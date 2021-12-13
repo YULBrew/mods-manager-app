@@ -32,6 +32,9 @@
     >
       <v-toolbar-title v-text="title" />
       <v-spacer />
+      <nuxt-link to="/game">
+        Games
+      </nuxt-link>
       <v-btn icon to="/settings">
         <v-icon>mdi-cog</v-icon>
       </v-btn>
