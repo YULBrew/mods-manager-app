@@ -20,7 +20,7 @@
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-text="item.title"/>
+            <v-list-item-title v-text="item.title" />
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -30,15 +30,15 @@
       fixed
       app
     >
-      <v-toolbar-title v-text="title"/>
-      <v-spacer/>
+      <v-toolbar-title v-text="title" />
+      <v-spacer />
       <v-btn icon to="/settings">
         <v-icon>mdi-cog</v-icon>
       </v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
-        <Nuxt/>
+        <Nuxt />
       </v-container>
     </v-main>
     <v-footer
