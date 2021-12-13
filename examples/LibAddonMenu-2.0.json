@@ -1,0 +1,41 @@
+{
+  "name": "LibAddonMenu-2.0",
+  "version": "32",
+  "author": "Seerah, sirinsidiator, et al.",
+  "contributors": [
+    "votan",
+    "merlight",
+    "Garkin",
+    "Randactyl",
+    "KuroiLight",
+    "silvereyes333",
+    "Baertram",
+    "kyoma",
+    "klingo",
+    "phuein",
+    "Scootworks"
+  ],
+  "description": "A library to aid in the creation of option panels.",
+  "files": [
+    "LibAddonMenu-2.0.lua",
+    "controls\panel.lua",
+    "controls\submenu.lua",
+    "controls\button.lua",
+    "controls\checkbox.lua",
+    "controls\colorpicker.lua",
+    "controls\custom.lua",
+    "controls\description.lua",
+    "controls\dropdown.lua",
+    "controls\editbox.lua",
+    "controls\header.lua",
+    "controls\slider.lua",
+    "controls\texture.lua",
+    "controls\iconpicker.lua",
+    "controls\divider.lua"
+  ],
+  "keywords": [
+    "library",
+    "ui"
+  ],
+  "license": "MIT"
+}
