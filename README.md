@@ -1,4 +1,4 @@
-# enuxt
+# Mods Manager
 
 > An electron-nuxt project
 
