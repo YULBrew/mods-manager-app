@@ -1,18 +1,40 @@
-/**
- * By default, Nuxt.js is configured to cover most use cases.
- * This default configuration can be overwritten in this file
- * @link {https://nuxtjs.org/guide/configuration/}
- */
+// import colors from 'vuetify/es5/util/colors'
 
 // export default {
 module.exports = {
+  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
+
+  // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+
   head: {
-    title: 'enuxt',
-    meta: [{ charset: 'utf-8' }]
+    title: 'Mods Manager',
+    htmlAttrs: {
+      lang: 'en'
+    },
+    meta: [
+      { charset: 'utf-8' },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: ''
+      },
+      {
+        name: 'format-detection',
+        content: 'telephone=no'
+      }
+    ]
   },
   loading: false,
+
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  components: true,
+
   plugins: [
     {
       ssr: true,
@@ -20,22 +42,36 @@ module.exports = {
     }
 
   ],
+
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxt/typescript-build'
-  ],
-  modules: [
+    // https://go.nuxtjs.dev/typescript
+    '@nuxt/typescript-build',
+    // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify'
   ],
+
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+    // '@nuxtjs/vuetify'
+  ],
+
+  // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
+    customVariables: ['~/assets/variables.scss'],
     theme: {
-      themes: {
-        light: {
-          primary: '#1867c0',
-          secondary: '#b0bec5',
-          accent: '#8c9eff',
-          error: '#b71c1c'
-        }
-      }
+      dark: true
+      // themes: {
+      //   dark: {
+      //     primary: colors.blue.darken2,
+      //     accent: colors.grey.darken3,
+      //     secondary: colors.amber.darken3,
+      //     info: colors.teal.lighten1,
+      //     warning: colors.amber.base,
+      //     error: colors.deepOrange.accent4,
+      //     success: colors.green.accent3
+      //   }
+      // }
     }
   }
 }
