@@ -3,8 +3,9 @@ const ICONS_DIR = 'build/icons/'
 const windowsOS = {
   win: {
     icon: ICONS_DIR + 'win-icon.ico',
-    publisherName: 'michal',
-    target: 'nsis'
+    publisherName: 'yulbrew',
+    target: 'nsis',
+    publish: ['github']
   },
 
   nsis: {
@@ -42,8 +43,9 @@ const macOS = {
 }
 
 module.exports = {
-  productName: 'enuxt',
-  appId: 'com.example.app',
+  productName: 'Mods Manager',
+  appId: 'ca.elcweb.games.mods',
+  // eslint-disable-next-line no-template-curly-in-string
   artifactName: 'setup-${version}.${ext}',
   directories: {
     output: 'build'
