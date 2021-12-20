@@ -5,6 +5,7 @@ const windowsOS = {
     icon: ICONS_DIR + 'win-icon.ico',
     publisherName: 'yulbrew',
     target: 'nsis',
+    signAndEditExecutable: true,
     publish: ['github']
   },
 
@@ -12,35 +13,35 @@ const windowsOS = {
     differentialPackage: true
   }
 }
-
-const linuxOS = {
-  linux: {
-    icon: ICONS_DIR,
-    target: 'deb'
-  }
-}
-
-const macOS = {
-  mac: {
-    target: 'dmg',
-    icon: ICONS_DIR + 'con.icns'
-  },
-  dmg: {
-    contents: [
-      {
-        x: 410,
-        y: 150,
-        type: 'link',
-        path: '/Applications'
-      },
-      {
-        x: 130,
-        y: 150,
-        type: 'file'
-      }
-    ]
-  }
-}
+//
+// const linuxOS = {
+//   linux: {
+//     icon: ICONS_DIR,
+//     target: 'deb'
+//   }
+// }
+//
+// const macOS = {
+//   mac: {
+//     target: 'dmg',
+//     icon: ICONS_DIR + 'con.icns'
+//   },
+//   dmg: {
+//     contents: [
+//       {
+//         x: 410,
+//         y: 150,
+//         type: 'link',
+//         path: '/Applications'
+//       },
+//       {
+//         x: 130,
+//         y: 150,
+//         type: 'file'
+//       }
+//     ]
+//   }
+// }
 
 module.exports = {
   productName: 'Mods Manager',
@@ -68,7 +69,7 @@ module.exports = {
       to: ''
     }
   ],
-  ...windowsOS,
-  ...linuxOS,
-  ...macOS
+  ...windowsOS
+  // ...linuxOS,
+  // ...macOS
 }

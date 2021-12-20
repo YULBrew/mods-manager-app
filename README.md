@@ -19,8 +19,14 @@ yarn lint
 
 ```
 
+#### Create Self Serve Certificate
+```bash
+./node_modules/electron-builder/cli.js create-self-signed-cert -p yulbrew
+```
 #### Release
 ```bash
+export GITHUB_TOKEN=SOMETHING
+export CSC_LINK=yulbrew.pfx
 yarn build --win --publish always
 ```
 References https://www.electron.build/
