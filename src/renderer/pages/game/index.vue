@@ -7,7 +7,7 @@
         <v-toolbar-title>Elder Scrolls Online</v-toolbar-title>
         <v-spacer />
         <v-btn icon @click="getFiles()">
-          Test2
+          Test7
         </v-btn>
         <template #extension>
           <v-tabs
