@@ -44,7 +44,7 @@
     "roboto-fontface": "^0.10.0",
     "sass-loader": "10.2.0",
     "vuetify": "^2.6.1",
-    "webpack": "^4.46.0",
+    "webpack": "^5.68.0",
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
