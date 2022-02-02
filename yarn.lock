@@ -4085,10 +4085,10 @@ electron-updater@^4.6.1:
     lodash.isequal "^4.5.0"
     semver "^7.3.5"
 
-electron@^15.2.0:
-  version "15.3.3"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-15.3.3.tgz#e66c6c6fbcd74641dbfafe5e101228d2b7734c7b"
-  integrity sha512-tr4UaMosN6+s8vSbx6OxqRXDTTCBjjJkmDMv0b0sg8f+cRFQeY0u7xYbULpXS4B1+hHJmdh7Nz40Qpv0bJXa6w==
+electron@^17.0.0:
+  version "17.0.0"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-17.0.0.tgz#60f00f3e3c657020e807a519700213943468b4d1"
+  integrity sha512-3UXcBQMwbMWdPvGHaSdPMluHrd+/bc+K143MyvE5zVZ+S1XCHt4sau7dj6svJHns5llN0YG/c6h/vRfadIp8Zg==
   dependencies:
     "@electron/get" "^1.13.0"
     "@types/node" "^14.6.2"
